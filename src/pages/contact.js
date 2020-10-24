@@ -9,8 +9,9 @@ export default function Contact() {
       <form
         name="contact-form-test-3"
         method="POST"
-        data-netlify="true"
         netlify
+        data-netlify="true"
+        netlify-honeypot="bot-field"
         action="/success"
       >
         <input type="hidden" name="form-name" value="contact-form-test-3" />
@@ -36,6 +37,11 @@ export default function Contact() {
         <p>
           <label>
             Message: <textarea name="message"></textarea>
+          </label>
+        </p>
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you're human: <input name="bot-field" />
           </label>
         </p>
         <p>
