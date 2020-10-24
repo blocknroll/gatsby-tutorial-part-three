@@ -11,6 +11,7 @@ export default function Contact() {
         method="POST"
         data-netlify="true"
         netlify
+        action="/pages/success"
       >
         <input type="hidden" name="form-name" value="contact-form-test-3" />
         <p>
