@@ -5,10 +5,8 @@ export default function Contact() {
   return (
     <Layout>
       <h1>I'd love to talk! Email me at the address below</h1>
-      <p>
-        <a href="mailto:me@example.com">me@example.com</a>
-      </p>
-      <form name="contact-form-test" method="POST" data-netlify="true">
+
+      <form name="contact-form-test-2" netlify>
         <p>
           <label>
             Your Name: <input type="text" name="name" />
@@ -17,20 +15,6 @@ export default function Contact() {
         <p>
           <label>
             Your Email: <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Role:{" "}
-            <select name="role[]" multiple>
-              <option value="widget-maker">Widget Maker</option>
-              <option value="widget-seller">Widget Seller</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            Message: <textarea name="message"></textarea>
           </label>
         </p>
         <p>
