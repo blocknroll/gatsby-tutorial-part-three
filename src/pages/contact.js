@@ -6,7 +6,12 @@ export default function Contact() {
     <Layout>
       <h1>I'd love to talk! Email me at the address below</h1>
 
-      <form name="contact-form-test-2" netlify>
+      <form
+        name="contact-form-test-3"
+        method="POST"
+        data-netlify="true"
+        netlify
+      >
         <p>
           <label>
             Your Name: <input type="text" name="name" />
