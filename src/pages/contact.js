@@ -11,7 +11,7 @@ export default function Contact() {
         method="POST"
         data-netlify="true"
         netlify
-        action="/pages/success"
+        action="/success"
       >
         <input type="hidden" name="form-name" value="contact-form-test-3" />
         <p>
@@ -28,8 +28,8 @@ export default function Contact() {
           <label>
             Your Role:{" "}
             <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
+              <option value="widget-maker">Widget Maker</option>
+              <option value="widget-seller">Widget Seller</option>
             </select>
           </label>
         </p>
