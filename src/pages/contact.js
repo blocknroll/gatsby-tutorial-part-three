@@ -13,6 +13,7 @@ export default function Contact() {
         netlify
       >
         <p>
+          <input type="hidden" name="form-name" value="contact-form-test-3" />
           <label>
             Your Name: <input type="text" name="name" />
           </label>
