@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 
+document.getElementById("h0n3y").style.display = "none"
+
 export default function Contact() {
   return (
     <Layout>
@@ -37,7 +39,7 @@ export default function Contact() {
             <textarea name="message" placeholder="Very Nice!"></textarea>
           </label>
         </p>
-        <p style={{ display: "none" }}>
+        <p id="h0n3y">
           <label>
             Please don't enter anything here if you are a person:
             <input name="address" />
