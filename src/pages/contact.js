@@ -11,37 +11,36 @@ export default function Contact() {
         method="POST"
         netlify
         data-netlify="true"
-        netlify-honeypot="bot-field"
+        netlify-honeypot="address"
         action="/success"
       >
         <input type="hidden" name="form-name" value="contact-form-test-3" />
         <p>
           <label>
-            Your Name: <input type="text" name="name" />
+            Name: <input type="text" name="name" placeholder="Borat Sagdiyev" />
           </label>
         </p>
         <p>
           <label>
-            Your Email: <input type="email" name="email" />
+            Phone: <input type="text" name="phone" placeholder="801-867-5309" />
           </label>
         </p>
         <p>
           <label>
-            Your Role:{" "}
-            <select name="role[]" multiple>
-              <option value="widget-maker">Widget Maker</option>
-              <option value="widget-seller">Widget Seller</option>
-            </select>
+            Email:{" "}
+            <input type="email" name="email" placeholder="borat@example.com" />
           </label>
         </p>
         <p>
           <label>
-            Message: <textarea name="message"></textarea>
+            Tell Us About Yourself:
+            <textarea name="message" placeholder="Very Nice!"></textarea>
           </label>
         </p>
-        <p class="hidden">
+        <p style={{ display: "none" }}>
           <label>
-            Don’t fill this out if you're human: <input name="bot-field" />
+            Please don't enter anything here if you are a person:
+            <input name="address" />
           </label>
         </p>
         <p>
