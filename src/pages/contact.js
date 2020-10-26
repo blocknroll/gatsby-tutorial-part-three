@@ -40,7 +40,7 @@ export default function Contact() {
         <p style={{ display: "none" }}>
           <label>
             Please don't enter anything here if you are a person:
-            <input name="address" />
+            <input name="address" autocomplete="off" />
           </label>
         </p>
         <p>
