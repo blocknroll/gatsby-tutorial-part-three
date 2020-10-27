@@ -1,0 +1,6 @@
+.responsive {
+  height: auto;
+  margin: 0 auto 0 auto;
+  max-width: 100%;
+  overflow: visible !important;
+}
