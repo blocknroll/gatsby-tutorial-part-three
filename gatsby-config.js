@@ -4,11 +4,14 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+const settings = require("./src/utils/site.json")
+
 module.exports = {
-  /* Your site config here */
+  siteMetadata: settings.meta,
   plugins: [
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import ImgStyles from "../styles/imgStyles.module.css"
+import ImgStyles from "../styles/imgStyles.module.scss"
 import Layout from "../components/layout"
 
 const Images = ({ data }) => {

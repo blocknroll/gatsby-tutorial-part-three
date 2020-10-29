@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "gatsby-tutorial-part-three",
+    "titleTemplate": "%s",
+    "description": "A starter to launch your Gatsby site",
+    "siteUrl": "https://gatsby-tutorial-part-three.netlify.app/",
+    "image": "",
+    "iconimage": "",
+    "twitterUsername": ""
+  },
+  "ga": "UA-XXXXXXXXX-X"
+}
