@@ -1,8 +1,13 @@
 import React from "react"
 import navStyles from "../styles/navStyles.module.scss"
 
-const Header = ({ children }) => (
-  <header className={navStyles.siteHeader}>{children}</header>
-)
+export default function Header({ children }) {
+  return <header className={navStyles.siteHeader}>{children}</header>
+}
 
-export default Header
+// // Or this, if you're not into the whole brevity thing:
+// const Header = ({ children }) => (
+//   <header className={navStyles.siteHeader}>{children}</header>
+// )
+
+// export default Header
