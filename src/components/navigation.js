@@ -1,6 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import navStyles from "../styles/navStyles.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+
+const hamburger = <FontAwesomeIcon icon={faBars} />
 
 const MenuItems = [
   {
@@ -52,8 +56,7 @@ class Navigation extends React.Component {
             (this.state.showMenu ? ` ${navStyles.isActive}` : "")
           }
         >
-          <div className={navStyles.iconMenuLine}>=</div>
-          <div className={navStyles.iconMenuClose}>X</div>
+          <div className={navStyles.hamburger}>{hamburger}</div>
         </button>
         <ul>{listMenuItems}</ul>
       </nav>
